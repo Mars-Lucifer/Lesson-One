@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+}
+
+.page {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page__header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.page img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.page__quote-list {
+  padding-left: 20px;
+}
+
+.quote__item {
+  margin-bottom: 10px;
+}
+
+.page__footer {
+  display: block;
+  margin-top: 20px;
+  text-align: right;
+  color: blue;
+  text-decoration: underline;
+}
