@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+
+
+.block{
+    font-size: 14px;
+    font-family: "Merriweather", sans-serif;
+    color:rgb(58, 2, 110);
+    border-radius: 10px;
+}
+
+img{
+    width:1300px;
+    
+}
+
+body{
+    background-color: rgb(31, 41, 33);
+    background-image: url('5d5c573bd706867bb8d48297949c52ad.jpg');
+    background-size:auto;
+    background-repeat: no-repeat; 
+    background-position: center;
+    margin:300px;
+    padding: 30px;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 1rem;
+}
