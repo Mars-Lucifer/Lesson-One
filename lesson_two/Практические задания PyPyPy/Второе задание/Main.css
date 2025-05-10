@@ -1,12 +1,10 @@
 .golovka {
-	color: #F08080;
-	font-size: 150px;
-	text-align: right;
-	text-decoration: none;
-
+    color: #f08080;
+    font-size: 150px;
+    text-align: right;
+    text-decoration: none;
 }
 html {
-
-	background-image: url("D:/Работа/Сайты/lesson/Lesson-One/image/Pypypy/2.gif");
-	background-size: cover;
+    background-image: url("/image/Pypypy/2.gif");
+    background-size: cover;
 }
