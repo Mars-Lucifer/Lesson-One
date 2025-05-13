@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Open+Sans&display=swap');
+
+body.page {
+  font-family: 'Open Sans', sans-serif;
+  background: url('https://lds-img.finalfantasyxiv.com/promo/h/G/X6-U2JYbC9_Oeyr19fH_rwiyeE.jpg') no-repeat center center fixed;
+  backdrop-filter: blur(10px);
+  background-size: cover;
+  color: #462121;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.7;
+  display: block;
+  height: 1280px;
+}
+
+
+.page__title {
+  font-family: 'Cinzel', serif;
+  font-size: 36px;
+  color: #ffd700;
+  text-align: center;
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+}
+
+.page__toc {
+  background-color: rgba(20, 20, 30, 0.85);
+  border: 1px solid #444;
+  padding: 10px;
+  margin-bottom: 20px;
+  max-width: 320px;
+  color: #ddd;
+}
+
+.toc__title {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  margin-top: 0;
+  color: #ffd700;
+}
+
+.toc__list {
+  list-style: decimal;
+  padding-left: 20px;
+}
+.toc__link {
+  color: #9ecfff;
+  text-decoration: none;
+}
+.toc__link:hover {
+  text-decoration: underline;
+}
+
+.page__content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* === Основное описание === */
+.description__text {
+  margin-bottom: 14px;
+}
+.description__highlight {
+  color: #ffb347;
+}
+.description__link {
+  color: #b3e5fc;
+  text-decoration: underline;
+}
+.description__link:hover {
+  text-decoration: none;
+}
+
+/* === Факты === */
+.facts {
+  background-color: rgba(60, 54, 20, 0.6);
+  padding: 10px;
+  border-left: 4px solid #c6b628;
+  margin-top: 20px;
+}
+.facts__title {
+  font-size: 22px;
+  border-bottom: 1px solid #777;
+  padding-bottom: 5px;
+  color: #ffcdd2;
+}
+.facts__list {
+  list-style: disc;
+  padding-left: 20px;
+}
+.facts__highlight {
+  color: #ef5350;
+  font-weight: bold;
+}
+.facts__item a {
+  color: #ff867c;
+  text-decoration: underline;
+}
+.facts__item a:hover {
+  text-decoration: none;
+}
+
+/* === Ссылки === */
+.links__title {
+  font-size: 22px;
+  border-bottom: 1px solid #777;
+  margin-top: 30px;
+  padding-bottom: 5px;
+  color: #ffe082;
+}
+.links__item {
+  margin-bottom: 8px;
+}
+.links__link {
+  color: #1b98fd;
+  text-decoration: underline;
+}
+.links__link:hover {
+  text-decoration: none;
+}
+
+/* === Боковая панель === */
+.content__sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 30px;
+  background-color: rgba(20, 20, 30, 0.8);
+  border: 1px solid #555;
+  padding: 10px;
+  color: #ccc;
+}
+.sidebar__image {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+  border: 2px solid #777;
+}
+.infobox {
+  font-size: 14px;
+}
+.infobox__cell {
+  padding: 4px 8px;
+  vertical-align: top;
+}
+.infobox__cell strong {
+  color: #ffee58;
+}
