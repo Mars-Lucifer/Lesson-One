@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 2vw;
+    background-color: #1e1e2f;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 3vw;
+  }
+  
+  .card-container {
+    text-align: center;
+    max-width: 100vw;
+  }
+  
+  .card {
+    display: inline-block;
+    width: 28vw;
+    min-width: 200px;
+    margin: 1vw;
+    background-color: #2e2e3e;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+  }
+  
+  .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 1.5vw rgba(255, 64, 129, 0.7);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+  }
+  
+  .card-content {
+    padding: 1vw;
+  }
+  
+  .card h3 {
+    font-size: 1.8vw;
+    margin: 0.5vw 0;
+  }
+  
+  .card p {
+    font-size: 1.4vw;
+    margin: 0.5vw 0 1vw;
+  }
+  
+  /* Кнопка покупки */
+  .buy-button {
+    display: inline-block;
+    padding: 0.8vw 2vw;
+    font-size: 1.2vw;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .buy-button:hover {
+    background-color: #e91e63;
+  }
+  
+  .buy-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 1vw rgba(255, 64, 129, 0.6);
+  }
+  
+  /* Пульс при нажатии */
+  .buy-button::after {
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    opacity: 0;
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+    pointer-events: none;
+  }
+  
+  .buy-button:active::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  /* Абсолютный элемент: бейдж */
+  .badge {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    background: crimson;
+    padding: 0.5vw 1vw;
+    font-size: 1vw;
+    border-radius: 0.5vw;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0%   { transform: scale(1); opacity: 1; }
+    50%  { transform: scale(1.2); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .card {
+      width: 90vw;
+      margin: 5vw auto;
+      display: block;
+    }
+  
+    .card h3,
+    .card p,
+    .buy-button,
+    .badge {
+      font-size: 4vw;
+    }
+  
+    .buy-button {
+      padding: 2vw 5vw;
+    }
+  }
+  
