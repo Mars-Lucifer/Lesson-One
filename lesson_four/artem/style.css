@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #333;
+  background: linear-gradient(to bottom, #FFEFBA, #FFFFFF );
+  padding: 20px;
+}
+
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  margin-bottom: 32px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.quote-list {
+  text-align: center;
+}
+
+.quote-card {
+  position: relative;
+  max-width: 380px;
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 30%;
+  margin: 2% 2% 20px 2%;
+  padding: 24px;
+  vertical-align: top;
+  text-align: left;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.quote-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+button {
+  all: unset;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.quote-card__copy {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.quote-card__copy:hover {
+  background-color: #f0f0f0;
+}
+
+.copied-popup {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.copied-popup.show {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
