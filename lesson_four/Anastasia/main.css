@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Rubik+Bubbles&display=swap');
+
+body {
+    background-color: #f5ead1;
+    padding: 5vw;
+    /*display: block;*/
+    font-size: 30px;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.block {
+    margin:0 2vw;
+    padding: 3vw;
+    max-width: 350px;
+    width: 28vw;
+    border: solid rgb(211, 208, 183);
+    border-radius: 20px;
+    position:relative;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+        
+.block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+} 
+
+.bb a {
+    color: rgb(240, 129, 85);
+    text-decoration: none;
+}
+
+.block__text2 {
+    text-align: center;
+    font-size: 2vw;
+    color: rgb(240, 129, 85);
+}
+
+.block__text {
+    text-align: center;
+    font-size: 2vw;
+    color: #642003;
+}
+
+.block__textprice {
+    text-align: center;
+    font-size: 2rem;
+    color: #2d4614;
+    border: 2px solid #92ca94;
+    border-radius: 20% 60px;
+    background-color: #bdecb1;
+    padding: 20px;
+    display: inline-block;
+    margin: 10px 80px;
+    transition: background 0.3s;
+}
+
+.block__textprice:hover {
+    background: #92ca94;
+}
+
+.block__img {
+    width: 100%;
+    border: solid rgb(211, 208, 183);;
+    border-radius: 10px;
+    margin-bottom: 2vw;
+}
+
+button {
+    border-radius: 50px;
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    padding: 1vw;
+    font-size: 20px;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #63bb0c;
+    background-color: #db6d3e;
+    /*padding: 1vw 3vw;
+    font-size: 1.5vw;*/
+}
