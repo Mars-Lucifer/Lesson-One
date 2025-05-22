@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 16px;
+  background: url('background.jpg') center center / cover no-repeat fixed;
+  color: #DAF1DE;
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.controls {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #2d5f49;
+  color: #DAF1DE;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover:not(:disabled) {
+  background-color: #3d6f59;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: minmax(50px, 80px) repeat(7, minmax(80px, 1fr));
+  grid-auto-rows: minmax(60px, auto);
+  gap: 1px;
+  background: rgba(62, 85, 74, 0.356);
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+}
+
+.calendar > div {
+  background: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.header {
+  font-weight: bold;
+  text-align: center;
+}
+
+.time {
+  background: #f0f0f0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.event {
+  border-left: 5px solid rgb(2, 255, 133);
+}
+
+.calendar > div[contenteditable="true"] {
+  outline: none;
+  cursor: text;
+  transition: background 0.2s;
+}
+
+.calendar > div[contenteditable="true"]:focus {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Анимация появления ячеек */
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
