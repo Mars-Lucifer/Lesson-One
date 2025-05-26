@@ -50,6 +50,7 @@ textarea:focus{
     box-shadow: 0 0 2vw #ffffff;
     color: #1b232a;
     border-left: 5px solid #00b02f;
+    transition: 0.3s;
 }
 textarea:not(:placeholder-shown){
     border-left: 5px solid #00b02f;
