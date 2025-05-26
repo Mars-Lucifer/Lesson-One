@@ -2,8 +2,8 @@ const calendar = document.getElementById("calendar");
 const addHourBtn = document.getElementById("addHourBtn");
 const removeHourBtn = document.getElementById("removeHourBtn");
 
-let currentHour = 4;
-const minHour = 5;
+let currentHour = 1;
+const minHour = 2;
 const maxHour = 24;
 
 function createHourRow(hour) {
