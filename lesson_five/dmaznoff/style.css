@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 16px;
   background: url("background.jpg") center center / cover no-repeat fixed;
-  color: #a4d1bd;
+  color: #e1fdf1;
 }
 
 h2 {
@@ -22,7 +22,7 @@ button {
   padding: 8px 20px;
   font-size: 13px;
   background-color: #395a4c;
-  color: #a4d1bd;
+  color: #e1fdf1;
   border: none;
   border-radius: 10px;
   cursor: pointer;
