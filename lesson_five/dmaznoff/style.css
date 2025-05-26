@@ -21,6 +21,7 @@ h2 {
 button {
   padding: 8px 20px;
   font-size: 13px;
+  font-weight: bold;
   background-color: #395a4c;
   color: #e1fdf1;
   border: none;
@@ -33,7 +34,7 @@ button {
 }
 
 button:hover:not(:disabled) {
-  background-color: #569e7f;
+  background-color: #40745d;
   transform: translateY(-1px);
 }
 
