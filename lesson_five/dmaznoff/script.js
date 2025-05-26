@@ -2,9 +2,9 @@ const calendar = document.getElementById("calendar");
 const addHourBtn = document.getElementById("addHourBtn");
 const removeHourBtn = document.getElementById("removeHourBtn");
 
-let currentHour = 1;
-const minHour = 2;
-const maxHour = 24;
+let currentHour = 0;
+const minHour = 1;
+const maxHour = 23;
 
 function createHourRow(hour) {
   const timeCell = document.createElement("div");
@@ -35,12 +35,10 @@ function removeHourRow() {
   currentHour--;
 }
 
-// Инициализация от 9:00 до 18:00
 for (let i = 0; i < 10; i++) {
   createHourRow(currentHour++);
 }
 
-// Добавление часа
 addHourBtn.addEventListener("click", () => {
   if (currentHour <= maxHour) {
     createHourRow(currentHour++);
@@ -48,7 +46,6 @@ addHourBtn.addEventListener("click", () => {
   updateButtons();
 });
 
-// Удаление часа
 removeHourBtn.addEventListener("click", () => {
   removeHourRow();
   updateButtons();
@@ -58,10 +55,10 @@ function updateButtons() {
   addHourBtn.disabled = currentHour > maxHour;
   removeHourBtn.disabled = currentHour <= minHour;
 
-  if (addHourBtn.disabled) addHourBtn.textContent = "Достигнут предел (00:00)";
+  if (addHourBtn.disabled) addHourBtn.textContent = "Достигнут предел (23:00)";
   else addHourBtn.textContent = "Добавить строку";
 
-  if (removeHourBtn.disabled) removeHourBtn.textContent = "Минимум 4:00";
+  if (removeHourBtn.disabled) removeHourBtn.textContent = "Минимум 0:00";
   else removeHourBtn.textContent = "Удалить строку";
 }
 
