@@ -1,33 +1,57 @@
-body{
-    height: 100vh;
-    width: auto;
-    background-color: pink;
+body {
+
+    background: url("background.jpg") center center no-repeat;
+    font-family: "Sofia Sans", sans-serif;
     font-size: 1.5vw;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
 }
 
-.calendar{
+.calendar {
     display: grid;
     grid-template-columns: minmax(4vw, 4vw) repeat(7, minmax(80px, 1fr));
     grid-auto-rows: minmax(60px, auto);
+    background-color: #ffffff00;
+    backdrop-filter: blur(2px);
+    color: #ffffff;
 
 }
 
-.cell{
-        font-weight: 550;
-}
-.calendar > div{
-
-    text-align: center;  
-    border: 0.1vw, solid, black;
+.cell {
+    font-weight: 550;
 }
 
-textarea:focus, input:focus{
+.calendar>div {
+
+    text-align: center;
+    border: 0.1vw, solid, rgba(255, 255, 255, 0.267);
+}
+
+textarea:focus, input:focus {
     outline: none;
 }
 
 textarea {
-    border: 0.1vw, solid, black;
+    border: 0.1vw, solid, rgba(255, 255, 255, 0.267);
+    font-family: "Sofia Sans", sans-serif;
     font-size: 1.5vw;
     resize: none;
-  }
+    color: #d9dbd7;
+    background-color: #ffffff00;
+    
+}
+
+textarea:focus{
+    background-color: #ffffffd8;
+    box-shadow: 0 0 2vw #ffffff;
+    color: #1b232a;
+    border-left: 5px solid #00b02f;
+}
+textarea:not(:placeholder-shown){
+    border-left: 5px solid #00b02f;
+}
 
