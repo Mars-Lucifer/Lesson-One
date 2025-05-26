@@ -61,7 +61,7 @@ function updateButtons() {
   if (addHourBtn.disabled) addHourBtn.textContent = "Достигнут предел (00:00)";
   else addHourBtn.textContent = "Добавить строку";
 
-  if (removeHourBtn.disabled) removeHourBtn.textContent = "Минимум 4:00";
+  if (removeHourBtn.disabled) removeHourBtn.textContent = "Минимум 01:00";
   else removeHourBtn.textContent = "Удалить строку";
 }
 
