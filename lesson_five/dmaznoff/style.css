@@ -30,7 +30,6 @@ button {
   transition: background 0.3s, transform 0.1s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   font-family: "DotGothic16", sans-serif;
-
 }
 
 button:hover:not(:disabled) {
