@@ -1,5 +1,4 @@
 body {
-
     background: url("background.jpg") center center no-repeat;
     font-family: "Sofia Sans", sans-serif;
     font-size: 1.5vw;
@@ -7,8 +6,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-
+    width: 99vw;
 }
 
 .calendar {
@@ -18,11 +16,6 @@ body {
     background-color: #ffffff00;
     backdrop-filter: blur(2px);
     color: #ffffff;
-
-}
-
-.cell {
-    font-weight: 550;
 }
 
 .calendar>div {
@@ -31,8 +24,8 @@ body {
     border: 0.1vw, solid, rgba(255, 255, 255, 0.267);
 }
 
-textarea:focus, input:focus {
-    outline: none;
+.cell {
+    font-weight: 550;
 }
 
 textarea {
@@ -42,17 +35,70 @@ textarea {
     resize: none;
     color: #d9dbd7;
     background-color: #ffffff00;
-    
 }
 
-textarea:focus{
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
     background-color: #ffffffd8;
     box-shadow: 0 0 2vw #ffffff;
     color: #1b232a;
     border-left: 5px solid #00b02f;
     transition: 0.3s;
 }
-textarea:not(:placeholder-shown){
+
+textarea:not(:placeholder-shown) {
     border-left: 5px solid #00b02f;
 }
 
+@media(max-width: 1024px) {
+    body {
+        width: 1024px;
+        height: auto;
+        font-size: 1.3vw;
+    }
+
+    .calendar {
+        width: 99vw;
+        height: auto;
+        margin-left: 1px;
+    }
+}
+
+@media(max-width:768px) {
+    body {
+        width: 768px;
+        height: auto;
+        font-size: 1.5vw;
+    }
+
+    .calendar {
+        width: 98vw;
+        height: auto;
+    }
+}
+
+/* @media(max-width:320px) {
+    body {
+        width: 320px;
+        height: auto;
+        font-size: 1.5vw;
+    }
+
+    textarea {
+        width: 10vw;
+        height: auto;
+    }
+
+    .cell {
+        width: 11.3vw;
+        height: auto;
+    }
+
+    .calendar{
+        grid-template-columns: minmax(80px, 80px) repeat(7, minmax(80px, 1fr));
+    }
+} */
