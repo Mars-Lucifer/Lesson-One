@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Rubik+Bubbles&family=Unbounded:wght@200..900&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+.body, html {
+    margin: 0;
+    border: 1px solid #000000;
+    margin:3vw;
+    font-family: "Ysabeau SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:600;
+    font-style: normal;
+}
+
+.calendar {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar_h1 {
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgb(206, 184, 226);
+    border: 3px solid #b061b8;
+    border-radius: 50px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    grid-column: 1 / -1;
+}
+
+.calendar__dayName {
+    margin-top: 10px;
+    background-color: rgb(165, 93, 161);
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+    
+}
+
+.calendar__day {
+    text-align: center;
+    padding: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    
+}
+
+.calendar__day:hover {
+    background-color: #daa9a9;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.calendar__start {
+    background-color: #000000;
+    background-image: url('pngwing.com.png');
+    background-size: 100px 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.calendar__day_wimg{
+    background-image: url('pngegg (2).png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: right 5px bottom 5px;
+}
+
+.calendar__event {
+    background-image: url('pngegg (1).png');
+    background-size: 55px 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.calendar__weekend1 {
+    background-color: #5f125b;
+    color: #c88ed4;
+}
+
+.calendar__end {
+    background-color: #000000;
+    background-image: url('pngegg (1).png');
+    background-repeat: no-repeat;
+    background-size:180px 180px;
+    background-position:center;
+}
