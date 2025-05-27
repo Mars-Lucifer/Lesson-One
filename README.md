@@ -14,4 +14,42 @@ Text
 ###### 6
 
 GOIDA
-[Link](htpps://youtube.com)
+[Link](htpps://youtube.com)<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- мета тег для блокировки скейлинга сайта пользователем и корректного отображенияы
+  //P.S. так и не разобрался что подразумевалось под скейлингом так что похуй, делал для адаптивности -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Календарь</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h2>Календарь недели</h2>
+
+<div class="controls">
+  <button id="addHourBtn">Добавить час</button>
+  <button id="removeHourBtn">Удалить час</button>
+</div>
+
+<div class="calendar" id="calendar">
+  <!-- Заголовки -->
+  <div></div>
+  <div class="header">Пн<br>20 мая</div>
+  <div class="header">Вт<br>21 мая</div>
+  <div class="header">Ср<br>22 мая</div>
+  <div class="header">Чт<br>23 мая</div>
+  <div class="header">Пт<br>24 мая</div>
+  <div class="header">Сб<br>25 мая</div>
+  <div class="header">Вс<br>26 мая</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
