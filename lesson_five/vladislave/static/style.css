@@ -9,6 +9,7 @@ body {
     width: 99vw;
 }
 
+/*класс календарь/cell в которых находится вся структура grid*/
 .calendar {
     display: grid;
     grid-template-columns: minmax(4vw, 4vw) repeat(7, minmax(80px, 1fr));
@@ -28,6 +29,7 @@ body {
     font-weight: 550;
 }
 
+/*поля ввода данных*/
 textarea {
     border: 0.1vw, solid, rgba(255, 255, 255, 0.267);
     font-family: "Sofia Sans", sans-serif;
@@ -54,6 +56,7 @@ textarea:not(:placeholder-shown) {
     border-left: 5px solid #00b02f;
 }
 
+/*адаптивность media запросами*/
 @media(max-width: 1024px) {
     body {
         width: 1024px;
@@ -81,9 +84,12 @@ textarea:not(:placeholder-shown) {
     }
 }
 
-/* @media(max-width:320px) {
+
+/*Я когда нибудь уйду
+
+@media(max-width:320px) {
     body {
-        width: 320px;
+        width: 320px; 
         height: auto;
         font-size: 1.5vw;
     }
