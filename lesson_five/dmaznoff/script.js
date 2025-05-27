@@ -1,11 +1,21 @@
+//задаем айдишники элементов которые будем отслеживать
 const calendar = document.getElementById("calendar");
 const addHourBtn = document.getElementById("addHourBtn");
 const removeHourBtn = document.getElementById("removeHourBtn");
 
+//основные значения для ограничения по часам
 let currentHour = 0;
 const minHour = 1;
 const maxHour = 23;
 
+//специально для люцика, эта часть скрипта проверяет ориентацию экрана устройства и если оно горизонтальное 
+//локает переход в вертикальное потому что невозможно нормально адаптировать под узкие экраны горихонтальный календарь
+if (screen.orientation && screen.orientation.type === "portrait") {
+  screen.orientation.lock("landscape");
+}
+
+//это функция которая будет создавать строку с часом,
+//есть немного лишней логики потому что основная концепция притерпела некоторые измененеия
 function createHourRow(hour) {
   const timeCell = document.createElement("div");
   timeCell.className = "time fade-in";
@@ -27,6 +37,7 @@ function createHourRow(hour) {
   }
 }
 
+//это функция для удаления строки с часом
 function removeHourRow() {
   if (currentHour <= minHour) return;
   for (let i = 0; i < 8; i++) {
@@ -51,6 +62,9 @@ removeHourBtn.addEventListener("click", () => {
   updateButtons();
 });
 
+//блокировка логиик создания строк потому что я же не даун,
+//в сутках всего 24 часа и лок будет от 0 чтобы часы не ушли в минус
+//и лок на 23 часа потому что можем создать только 24 строки ровно по количеству часов в сутках
 function updateButtons() {
   addHourBtn.disabled = currentHour > maxHour;
   removeHourBtn.disabled = currentHour <= minHour;
