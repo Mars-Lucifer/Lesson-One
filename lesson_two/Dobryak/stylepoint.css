@@ -1,0 +1,37 @@
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Stalinist+One&display=swap');
+
+body {
+    font-family: "Orbitron", sans-serif;
+    background: url('https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/1091500/4ab21a6c318ce3e8f63757cb2481ef54888e3a5c.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f2f2f2;
+}
+
+.kartinka {
+    max-width: 700px;
+    margin: 70px auto;
+    padding: 40px;
+}
+
+.body {
+    background-image: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/1091500/4ab21a6c318ce3e8f63757cb2481ef54888e3a5c.jpg");
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 350px;
+}
+
+.cursed_text {
+    font-family: "Stalinist One", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.shift {
+    color: red
+}
+
+
