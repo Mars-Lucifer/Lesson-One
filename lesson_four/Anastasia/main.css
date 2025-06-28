@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Rubik+Bubbles&display=swap');
 
 body {
-    background-color: #f5ead1;
+    background-color: rgb(255, 217, 179);
     padding: 5vw;
     /*display: block;*/
     font-size: 30px;

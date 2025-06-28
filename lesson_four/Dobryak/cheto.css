@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap'); /*font-family: "Rubik Glitch", system-ui;*/
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');   /*font-family: "Stalinist One", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');  /*font-family: "Tektur", sans-serif*/
+
+.body {
+      padding-top: 50vw;
+      padding-bottom: 50vw;
+      font-family: "Tektur", sans-serif;   
+ }
+
+
+.shapka {
+    background-image: url(https://i.redd.it/2g44midad7o51.png);
+    background-size: cover;
+    background-color: #000000;
+    color: #ffffff;
+    padding-left: 45vw;
+}
+
+.textarasaka {
+    color: rgb(0, 0, 0);
+    font-family: "Tektur", sans-serif
+}
+
+.text {
+    color: white;
+    font-family: "Tektur", sans-serif
+}
+
+.knopka {
+    color: rgb(255, 255, 255);
+    outline-width: thick;
+    font-family: "Tektur", sans-serif
+}
+
+.card-product {
+    background-color: black;
+    margin: 2vw;
+    padding: 3vw;
+    max-width: 350px;
+    width: 28vw;
+    border: solid rgb(0, 0, 0);
+    border-radius: 20px;
+    position:relative;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
+    vertical-align: top;
+    font-family: "Tektur", sans-serif
+}
+
+.knopka {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 20% 60px;
+    background-color: #ff0000;
+    padding: 20px;
+    display: inline-block;
+    transition: background 0.4s;
+}
+
+.knopka:hover {
+    background-color: #e5c709;
+}
+
+.link {
+    padding-left: 5vw;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    font-family: "Stalinist One", sans-serif;
+
+}
+
+ .links .link:hover {
+    padding-left: 5vw;
+    border: solid rgb(0, 0, 0);
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 3px;
+    transition: all 0.2s linear;
+ }
+
+ .card-product {
+    margin: 2vw;
+    padding: 3vw;
+    max-width: 350px;
+    width: 28vw;
+    border: solid rgb(0, 0, 0);
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.4s, box-shadow 0.4s;
+ }
+
+ .card-product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+ }
+
+ .skidka {
+    border-radius: 50px;
+    position: absolute
+    top: 2vw;
+    right: 2vw;
+    padding: 1vw;
+    font-size: 20px;
+    font-family: "Rubik Glitch", system-ui;
+    color: #ffffff;
+    background-color: #ff0000;
+ }
